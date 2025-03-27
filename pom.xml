@@ -12,12 +12,12 @@
     </parent>
 
     <groupId>com.ieinm</groupId>
-    <artifactId>ControlAlumnos</artifactId>
+    <artifactId>IEINM-API-REST-JPA</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>ControlAlumnos</name>
-    <description>Demo project for Spring Boot</description>
+    <name>IEINM-API-REST-JPA</name>
+    <description>CONTROL DE ALUMNOS IEINM</description>
 
     <properties>
         <java.version>21</java.version>
@@ -59,7 +59,7 @@
             <version>2.0.3</version>
         </dependency>
     </dependencies>
-
+    
     <build>
         <plugins>
             <plugin>
