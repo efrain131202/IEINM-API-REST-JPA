@@ -1,5 +1,6 @@
 package com.ieinm.modelo;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,35 +11,59 @@ import jakarta.persistence.Table;
 
 // Define el nombre de la tabla en la base de datos.
 @Table(name = "ALUMNO")
+
+//Descripción de la entidad
+@Schema(description = "Entidad que representa a un alumno en el sistema educativo")
 public class Alumno {
 
 	// Identificador único del alumno.
 	@Id
 	@Column
+
+	// Descripcion de variable id
+	@Schema(description = "Identificador único del alumno", example = "1")
 	private int id;
 
 	// Nombre del alumno.
 	@Column(name = "NOMBRE")
+
+	// Descripcion de variable anombre
+	@Schema(description = "Nombre del alumno", example = "Efrain")
 	private String nombre;
 
 	// Apellido paterno del alumno.
 	@Column(name = "APEPA")
+
+	// Descripción de variable apepa
+	@Schema(description = "Apellido paterno del alumno", example = "Cruz")
 	private String apepa;
 
 	// Apellido materno del alumno.
 	@Column(name = "APEMA")
+
+	// Descripción de variable apema
+	@Schema(description = "Apellido materno del alumno", example = "Lobato")
 	private String apema;
 
 	// Matrícula del alumno.
 	@Column(name = "MATRICULA")
+
+	// Descripción de variable matricula
+	@Schema(description = "Matricula del alumno", example = "20202ITI029")
 	private String matricula;
 
 	// Carrera que estudia el alumno.
 	@Column(name = "CARRERA")
+
+	// Descripción de variable carrera
+	@Schema(description = "Carrera del alumno", example = "Ingenieria en desarrollo y gestión de software")
 	private String carrera;
 
 	// Estado actual del alumno.
 	@Column(name = "ESTADO")
+
+	// Descripción de variable estado
+	@Schema(description = "Estado actual del alumno", example = "graduado")
 	private String estado;
 
 	// Constructor vacío necesario para JPA.
